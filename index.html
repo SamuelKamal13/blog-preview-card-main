@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
+
+  <title>Frontend Mentor | Blog preview card</title>
+
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      background-color: hsl(47, 88%, 63%);
+      display: grid;
+      align-items: center;
+      justify-content: center;
+      height: 100vh;
+      font-family: fonts;
+      align-content: center;
+      grid-template-rows: 1fr max-content;
+      justify-items: center;
+    }
+
+    .card {
+      background-color: hsl(0, 0%, 100%);
+      width: 250px;
+      display: flex;
+      flex-direction: column;
+      padding: 20px;
+      border-radius: 10px;
+      box-shadow: 10px 10px black;
+    }
+
+    .img {
+      border-radius: 10px;
+      align-self: center;
+      width: 100%;
+    }
+
+    .learn {
+      background-color: hsl(47, 88%, 63%);
+      width: fit-content;
+      padding: 5px 10px;
+      border-radius: 5px;
+      margin: 20px 0 15px;
+      font-weight: 800;
+    }
+
+    .attribution {
+      font-size: 11px;
+      text-align: center;
+      padding: 20px;
+    }
+
+    .attribution a {
+      color: hsl(228, 45%, 44%);
+    }
+
+    @font-face {
+      font-family: fonts;
+      src: url(./assets/fonts/Figtree-VariableFont_wght.ttf);
+    }
+
+    @media only screen and (max-width: 375px) {
+      .card {
+        width: 200px;
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+  <div class="card">
+    <img class="img" src="./assets/images/illustration-article.svg" alt="" srcset="">
+    <p class="learn">Learning</p>
+    <p style="font-weight: 500;">Published 21 Dec 2023</p>
+    <h3 style="padding: 20px 0 15px; font-weight: bolder; font-weight: 800;">HTML & CSS foundations</h3>
+    <p style="color: hsl(0, 0%, 42%);">These languages are the backbone of every website, defining structure, content,
+      and presentation.</p>
+    <div style="display: flex; flex-direction: row; align-items: center; padding-top: 20px;">
+      <img style="margin-right: 10px;" src="./assets/images/image-avatar.webp" height="30px" width="30px" alt=""
+        srcset="">
+      <span style="font-weight: 800;">Greg Hooper</span>
+    </div>
+  </div>
+
+  <div class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
+    Coded by <a href="https://www.facebook.com/samuel.kamal.56/">Samuel Kamal</a>.
+  </div>
+</body>
+
+</html>
